@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Services | Umuahia Tutors</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="index.html">
+      UMUAHIA <span class="text-dark">ELITE SERVICES</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-graduation-cap me-1"></i> Tutoring
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Trusted Home Services in Umuahia</h1>
+    <p class="lead mt-3">Plumbing • Electrical • Cleaning • Laundry • Cooking • Delivery</p>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Our Services</h2>
+
+    <div class="row g-4">
+
+      <!-- Plumbing -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+          <h5>Plumbing</h5>
+          <p>Leak repairs, pipe installations, emergency fixes.</p>
+          <button class="btn btn-outline-primary" onclick="bookService('Plumbing')">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Electrical -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+          <h5>Electrical</h5>
+          <p>Installations, wiring, and certified technicians.</p>
+          <button class="btn btn-outline-primary" onclick="bookService('Electrical')">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Cleaning -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="fas fa-broom fa-3x text-primary mb-3"></i>
+          <h5>Cleaning</h5>
+          <p>Deep cleaning for homes and offices.</p>
+          <button class="btn btn-outline-primary" onclick="bookService('Cleaning')">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Laundry -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="fas fa-tshirt fa-3x text-primary mb-3"></i>
+          <h5>Laundry</h5>
+          <p>Pickup and delivery laundry services.</p>
+          <button class="btn btn-outline-primary" onclick="bookService('Laundry')">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Cooking -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="fas fa-utensils fa-3x text-primary mb-3"></i>
+          <h5>Home Cooking</h5>
+          <p>Professional cooks for daily meals or events.</p>
+          <button class="btn btn-outline-primary" onclick="bookService('Home Cooking')">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Delivery -->
+      <div class="col-md-4">
+        <div class="card h-100 text-center p-4 shadow-sm">
+          <i class="fas fa-truck fa-3x text-primary mb-3"></i>
+          <h5>Delivery</h5>
+          <p>Fast and secure merchandise delivery.</p>
+          <button class="btn btn-outline-primary" onclick="bookService('Delivery')">Book Now</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h3 class="fw-bold">Need Immediate Assistance?</h3>
+    <p class="mb-3">Chat with us instantly on WhatsApp.</p>
+    <a href="https://wa.me/2347039280073" class="btn btn-light btn-lg">
+      <i class="fab fa-whatsapp me-2"></i>Chat Now
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-0">© 2026 Umuahia Tutors</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const MY_NUMBER = "2347039280073";
+
+function bookService(serviceName){
+  const msg = `Hello Umuahia Tutors, I would like to book your ${serviceName} service.`;
+  window.open(`https://wa.me/${MY_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
+}
+</script>
+
+</body>
+</html>
